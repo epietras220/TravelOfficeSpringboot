@@ -9,7 +9,8 @@ import javax.persistence.Id;
 public class Trip {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String start;
     private String end;
     private String destination;
